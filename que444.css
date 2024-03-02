@@ -1,0 +1,22 @@
+Record { 
+    display:table; 
+    font-size:14px; 
+    margin:8px; 
+    font-family: Verdana; 
+    width: 99%;
+} 
+data{ 
+    display:table-row; 
+    text-align:left; 
+    border: 1px solid black; 
+    background-color:lightcyan; 
+} 
+data-cell,data-header { 
+    display: table-cell; 
+    border: solid 1px; 
+    width: 25%;
+}
+data-header{
+    font-weight: bold;
+    background-color: cornflowerblue;
+}

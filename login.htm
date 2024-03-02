@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="login.css">
+     <link rel="stylesheet" href="nav.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <style>
+        .loginbtn{
+           
+              color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  transition: all 0.3s ease-in-out;
+            background-color: transparent;
+          
+        }
+    </style>
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+    <nav>
+    <div class="wrapper" style="background-color: black">
+        <div class="logo"><a href="#">PHENIX</a></div>
+        <ul class="nav-links">
+            <li><a class="tier-1-links" href="home.htm">Home</a></li>
+            <li><a class="tier-1-links" href="new.htm">AboutUs</a></li>
+
+            <li>
+                <a class="tier-1-links" href="#">Clothing</a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <img src="shoes.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="mega-box-header">Men</div>
+                            <ul class="mega-links">
+                              <li><a href="clothes.htm">Shirts</a></li>
+                                <li><a href="clothes.htm">Hoodies & Jackets</a></li>
+                                <li><a href="clothes.htm">Pants / Bottoms</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="mega-box-header">Women</div>
+                            <ul class="mega-links">
+                                <li><a href="women.htm">Shirts</a></li>
+                                <li><a href="women.htm">Gilets</a></li>
+                                <li><a href="women.htm">Jeans / Shorts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="mega-box-header">Footwear</div>
+                            <ul class="mega-links">
+                                <li><a href="clothes.htm">Running</a></li>
+                                <li><a href="clothes.htm">Jordan</a></li>
+                                <li><a href="clothes.htm">SNKRS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li><a class="tier-1-links" href="contactus.htm" target="_blank">Contact</a></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto color=white">Login</button></li>
+        </ul>
+    
+    </div>
+</nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login' action="validate.php" method="post">
+                    <input type='email'class='input-field'placeholder='Email Id'name='email' required >
+		    <input type='password'class='input-field'placeholder='Enter Password'name='password' required>
+		    <input type='checkbox'class='check-box'><span style="color: white">Remember Password</span>
+		    <button type='submit'class='log-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register' method="post" action="registration.php">
+		     <input type='text'class='input-field'placeholder='First Name' name='firstname' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' name='lastname' required>
+		     <input type='email'class='input-field'placeholder='Email Id' name='email' required>
+		     <input type='password'class='password'placeholder='Enter Password'name='password' required>
+		     <input type='password'class='confirmpassword'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box' required><span style="color: white">I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+     
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display="none";
+            }
+        }
+    </script>
+    <script>
+    document.querySelector('.submit-btn').onclick = function(){
+        var password = document.querySelector('.password').value,
+            confirmPassword = document.querySelector('.confirmpassword').value;
+        if(password != confirmPassword){
+            alert("Please check your password! \n Confirm Password must be same as Enter Password.");
+            return false
+        }
+    }
+    </script>
+</body>
+</html>

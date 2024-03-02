@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(pexels-andrea-piacquadio-3839200.jpg);
+  background-repeat: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  border: 10px solid black;
+  border-radius: 15px;
+}
+nav {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 420;
+  height: 65px;
+  line-height: 65px;
+}
+nav.black {
+  background: #000;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 100%;
+  padding: 0px 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .nav-links {
+  display: inline-flex;
+}
+.wrapper .logo a {
+  color: orangered;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Almendra Display", cursive;
+  transition: 0.3s ease;
+}
+
+.wrapper .logo a:hover {
+  color: orangered;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: rgba(0, 0, 0, 0.507);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.black .nav-links li a {
+  color: white;
+}
+
+.nav-links li .tier-1-links {
+  color: white;
+}
+
+.nav-links li .tier-1-links:hover {
+  color: orangered;
+}
+
+.nav-links li a:hover {
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover .mega-box {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+nav.black .nav-links li a:hover {
+  color: orangered;
+}
+
+.mega-box {
+  position: absolute;
+  top: 80px;
+  background: black;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3 ease;
+}
+.mega-box .content {
+  background: black;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content .row {
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+
+.content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content .row .mega-box-header {
+  color: #ffdcbc;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.content .row .mega-links {
+  margin-left: -40px;
+  border-left: 1px solid rgb(224, 62, 3);
+}
+
+.content .row #mega-box-nav-1 {
+  border-left: none;
+}
+
+.row .mega-links li {
+  padding: 0 20px;
+}
+
+.row .mega-links li a {
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
+.row .mega-links li a:hover {
+  color: orangered;
+}
+
+/* SLIDER SECTION */
+
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.slider-wrapper div {
+  position: relative;
+}
+.slider-wrapper {
+  margin-top: 5vw;
+  margin-left: 11vw;
+}
+.slide-image {
+  height: 24vw;
+}
+.slide-image img {
+  width: 20vw;
+  cursor: pointer;
+}
+.slide-content {
+  width: 25vw;
+  color: #fff;
+  padding: 3vw 2vw 14vw 3vw;
+}
+.slide-date {
+  color: #0a8acb;
+  font-size: 1.1vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  padding-bottom: 1.4vw;
+}
+.slide-title {
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  line-height: 1.55vw;
+  padding-bottom: 1.8vw;
+}
+.slide-text {
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  opacity: 0.8;
+  padding-bottom: 4vw;
+}
+.slide-more {
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  float: left;
+  font-size: 0.9vw;
+}
+.slide-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: #0b8bcc;
+  border-radius: 200%;
+  position: relative;
+  margin-left: 1.2vw;
+}
+.slide-nav {
+  margin-left: 64vw;
+  margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease all;
+}
+div.overlay-blue:hover {
+  background-color: rgba(13, 27, 43, 0.5);
+}
+
+.arrows {
+  width: 3.5vw;
+  margin-top: -4.3vw;
+  margin-left: 72vw;
+  position: relative;
+}
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.15vw solid #fff;
+  border-left: 0.15vw solid #fff;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+.arrow:hover {
+  border-color: #0a8acb;
+  border-width: 0.25vw;
+}
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+.arrow.prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+.arrow.next {
+  transform: rotate(135deg);
+  right: 0;
+}
+{"mode":"full","isActive":false}

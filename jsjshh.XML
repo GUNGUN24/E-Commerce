@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="screenshots/showtableformat.css"?>
+<book>
+<books>
+<Title>The Moon is a Harsh Mistress</Title>
+<Author>R. A. Heinlein</Author>
+<Publisher>Orb</Publisher>
+<ISBN>0312863551</ISBN>
+    </books>
+<books>
+<Title>Fahrenheit 451F</Title>
+<Author>R. Bradbury</Author>
+<Publisher>Del Rey</Publisher>
+<ISBN>0345342968</ISBN>
+    </books>
+<books>
+<Title>The Silmarillion</Title>
+<Author>J.R.R. Tolkien</Author>
+<Publisher>G Allen & Unwin</Publisher>
+<ISBN>0048231398</ISBN>
+    </books>
+    <books>
+<Title>1984</Title>
+<Author>G. Orwell</Author>
+<Publisher>Signet</Publisher>
+<ISBN>0451524934</ISBN>
+    </books>
+    <books>
+<Title>Frankenstein</Title>
+<Author>M. Shelley</Author>
+<Publisher>Bedford</Publisher>
+<ISBN>031219126X</ISBN>
+    </books>
+</book>

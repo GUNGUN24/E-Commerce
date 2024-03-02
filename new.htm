@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylefooter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+  height: 100%;
+  margin: 0;
+
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+
+}
+    @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.bgimg-1 {
+  background-image: url("Screenshot%20(56).png");
+  min-height: 100%;
+   opacity: 1;
+}
+
+.bgimg-2 {
+  background-image: url("https://cache.desktopnexus.com/thumbseg/2595/2595102-bigthumbnail.jpg");
+  min-height: 70%;
+}
+
+.bgimg-3 {
+  background-image: url("pexels-andrea-piacquadio-972995.jpg");
+  min-height: 70%;
+}
+
+.caption {
+
+  left: 0;
+  top: 60%;
+  width: 100%;
+  text-align: left;
+    font-weight:400;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: saddlebrown;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+    .caption1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: 50px left;
+}
+    .caption1 span.subject{
+    text-align:left; 
+  color: saddlebrown;
+  font-size: 40px;
+  letter-spacing: 10px;
+    }
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+    .aboutus {
+  color: black;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  from {color: white;background-color: black;}
+  to {color:  black;background-color: white;}
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+    .row1 {
+  display: flex;
+}
+
+
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+        .card{
+            border-color: aliceblue;
+            border: 2px solid white;
+        }
+
+.container {
+  padding: 0 16px;
+    background-color: aliceblue;
+}
+
+.container::after, .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+ border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  font-size: 18px;
+ 
+}
+
+.button:hover {
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+
+
+   <nav>
+    <div class="wrapper" style="background-color: black">
+        <div class="logo"><a href="#">PHENIX</a></div>
+        <ul class="nav-links">
+            <li><a class="tier-1-links" href="home.htm">Home</a></li>
+            <li><a class="tier-1-links" href="new.htm">AboutUs</a></li>
+
+            <li>
+                <a class="tier-1-links" href="#">Clothing</a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <img src="shoes.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="mega-box-header">Men</div>
+                            <ul class="mega-links">
+                                <li><a href="clothes.htm">Shirts</a></li>
+                                <li><a href="clothes.htm">Hoodies & Jackets</a></li>
+                                <li><a href="clothes.htm">Pants / Bottoms</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="mega-box-header">Women</div>
+                            <ul class="mega-links">
+                                <li><a href="women.htm">Shirts</a></li>
+                                <li><a href="women.htm">Gilets</a></li>
+                                <li><a href="women.htm">Jeans / Shorts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="mega-box-header">Footwear</div>
+                            <ul class="mega-links">
+                                <li><a href="clothes.htm">Running</a></li>
+                                <li><a href="clothes.htm">Jordan</a></li>
+                                <li><a href="clothes.htm">SNKRS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li><a class="tier-1-links" href="contactus.htm" target="_blank">Contact</a></li>
+                <li><a class="tier-1-links" href="login.htm">Login</a></li>
+        </ul>
+    
+    </div>
+</nav>
+  <div class="bgimg-1"><div class="caption">
+       <div class="caption1"> <span class="subject">Get it before it's gone.</span></div>
+</div></div>
+    
+  
+
+<div class="aboutus" style="background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3  style="text-align:center;">ABOUT PHENIX</h3>
+  <p>Welcome to PHENIX!<br/>
+
+We aim to offer our customers a variety of the latest Clothes. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget-friendly products. We offer all of this while providing excellent customer service and friendly support.<br/>
+
+We always keep an eye on the latest trends in Clothes and put our customers’ wishes first. That is why we have satisfied customers all over the world, and are thrilled to be a part of the Clothes industry.<br/>
+
+The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.</p>
+    </div>
+
+<div class="bgimg-2">
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align: center;">Value proposition</h1>
+      <p>
+Phenix's value proposition revolves around giving consumers the power and ease of purchasing fashion and lifestyle products online. Offerings such as the largest in-season product catalogue, 100% authentic products, cash on delivery and 30 day return policy make Phenix, the preferred shopping destination in the country. To make online shopping easier for you, a dedicated customer connect team is on standby to answer your queries 24x7.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+</div>
+    <div >
+<h1 style="text-align: center; color: white;"><br/>MEET THE TEAM<br/></h1><br/>
+<div class="row1" >
+  <div class="column">
+    <div class="card">
+      <img src="SquareQuick_202121811312488%20(1).jpg" alt="Jane" style="width:100%;height: 250px; align-content: center;">
+      <div class="container">
+        <h2>Gungun</h2>
+        <p class="title">Front-end Developer</p>
+       
+        <p>gungundhamija@gmail.com</p>
+       <p><button class="button" ><a href="contactus.htm">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Screenshot_20210708-000140_WhatsApp.jpg" alt="Mike" style="width:100%;height: 250px;">
+      <div class="container">
+        <h2>Dhanesh Lakhani</h2>
+        <p class="title">Front-end Developer</p>
+        
+        <p>dhaneshlakhani16@gmail.com</p>
+        <p><button class="button" ><a href="contactus.htm">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="DSC_0811.jpg" alt="John" style="width:100%;height: 250px;">
+      <div class="container">
+        <h2>Mohit Singh</h2>
+        <p class="title">Back-end Developer</p>
+        
+        <p>mandyalrishi20@gmail.com</p>
+        <p><button class="button" ><a href="contactus.htm">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+     <div class="column">
+    <div class="card">
+      <img src="WhatsApp%20Image%202021-07-08%20at%2006.59.34.jpeg" alt="Mike" style="width:100%;height: 250px;">
+      <div class="container">
+        <h2>Aniket Pathania</h2>
+        <p class="title">Back-end Developer</p>
+        
+        <p>ani.pathanai01@gmail.com</p>
+          <p><button class="button" ><a href="contactus.htm">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div><br/><br/></div>
+<div class="bgimg-1">
+</div>
+     <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">PHENIX</div>
+                    <p>A Moments of Spark,
+                        Don't Stress About The Dress, We'll Dress You To Impress, Exclusive And Luxurious.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+91 9365879825</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>phenixshopme@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Sitemap</div>
+                <div><a href="#">Home</a></div>
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Contact Us</a></div>
+                <div><a href="#">Shirts</a></div>
+
+            </div>
+            <div class="right box">
+                <div class="topic">Follow Us!</div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright © 2021 <a href="#">PHENIX</a> All rights reserved</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
